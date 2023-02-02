@@ -7,11 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6CB9994629827D8100DD15E8 /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9994529827D8100DD15E8 /* DadJokesApp.swift */; };
 		6CB9994829827D8100DD15E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9994729827D8100DD15E8 /* ContentView.swift */; };
 		6CB9994A29827D8100DD15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9994929827D8100DD15E8 /* Assets.xcassets */; };
 		6CB9994D29827D8100DD15E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9994C29827D8100DD15E8 /* Preview Assets.xcassets */; };
+		6CD31F2E2983B35E00C9DB8F /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9994529827D8100DD15E8 /* DadJokesApp.swift */; };
+		6CE3488C29859FEA00CE402B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD31F142983AFEC00C9DB8F /* WidgetKit.framework */; };
+		6CE3488D29859FEA00CE402B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD31F162983AFEC00C9DB8F /* SwiftUI.framework */; };
+		6CE3489029859FEA00CE402B /* JokeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3488F29859FEA00CE402B /* JokeWidgetBundle.swift */; };
+		6CE3489229859FEA00CE402B /* JokeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3489129859FEA00CE402B /* JokeWidgetLiveActivity.swift */; };
+		6CE3489429859FEA00CE402B /* JokeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3489329859FEA00CE402B /* JokeWidget.swift */; };
+		6CE3489629859FEB00CE402B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3489529859FEB00CE402B /* Assets.xcassets */; };
+		6CE3489A29859FEB00CE402B /* JokeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CE3488B29859FEA00CE402B /* JokeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CE3489829859FEB00CE402B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB9993A29827D8100DD15E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CE3488A29859FEA00CE402B;
+			remoteInfo = JokeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CD31F252983AFED00C9DB8F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CE3489A29859FEB00CE402B /* JokeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6CB9994229827D8100DD15E8 /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +50,14 @@
 		6CB9994729827D8100DD15E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6CB9994929827D8100DD15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB9994C29827D8100DD15E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CD31F142983AFEC00C9DB8F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6CD31F162983AFEC00C9DB8F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6CE3488B29859FEA00CE402B /* JokeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JokeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE3488F29859FEA00CE402B /* JokeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWidgetBundle.swift; sourceTree = "<group>"; };
+		6CE3489129859FEA00CE402B /* JokeWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		6CE3489329859FEA00CE402B /* JokeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeWidget.swift; sourceTree = "<group>"; };
+		6CE3489529859FEB00CE402B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CE3489729859FEB00CE402B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CE3488829859FEA00CE402B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3488D29859FEA00CE402B /* SwiftUI.framework in Frameworks */,
+				6CE3488C29859FEA00CE402B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				6CB9994429827D8100DD15E8 /* DadJokes */,
+				6CE3488E29859FEA00CE402B /* JokeWidget */,
+				6CD31F132983AFEC00C9DB8F /* Frameworks */,
 				6CB9994329827D8100DD15E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				6CB9994229827D8100DD15E8 /* DadJokes.app */,
+				6CE3488B29859FEA00CE402B /* JokeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +118,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CD31F132983AFEC00C9DB8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CD31F142983AFEC00C9DB8F /* WidgetKit.framework */,
+				6CD31F162983AFEC00C9DB8F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CE3488E29859FEA00CE402B /* JokeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3488F29859FEA00CE402B /* JokeWidgetBundle.swift */,
+				6CE3489129859FEA00CE402B /* JokeWidgetLiveActivity.swift */,
+				6CE3489329859FEA00CE402B /* JokeWidget.swift */,
+				6CE3489529859FEB00CE402B /* Assets.xcassets */,
+				6CE3489729859FEB00CE402B /* Info.plist */,
+			);
+			path = JokeWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +149,34 @@
 				6CB9993E29827D8100DD15E8 /* Sources */,
 				6CB9993F29827D8100DD15E8 /* Frameworks */,
 				6CB9994029827D8100DD15E8 /* Resources */,
+				6CD31F252983AFED00C9DB8F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CE3489929859FEB00CE402B /* PBXTargetDependency */,
 			);
 			name = DadJokes;
 			productName = DadJokes;
 			productReference = 6CB9994229827D8100DD15E8 /* DadJokes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6CE3488A29859FEA00CE402B /* JokeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE3489D29859FEB00CE402B /* Build configuration list for PBXNativeTarget "JokeWidgetExtension" */;
+			buildPhases = (
+				6CE3488729859FEA00CE402B /* Sources */,
+				6CE3488829859FEA00CE402B /* Frameworks */,
+				6CE3488929859FEA00CE402B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JokeWidgetExtension;
+			productName = JokeWidgetExtension;
+			productReference = 6CE3488B29859FEA00CE402B /* JokeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +189,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					6CB9994129827D8100DD15E8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6CE3488A29859FEA00CE402B = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				6CB9994129827D8100DD15E8 /* DadJokes */,
+				6CE3488A29859FEA00CE402B /* JokeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +225,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CE3488929859FEA00CE402B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3489629859FEB00CE402B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +240,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD31F2E2983B35E00C9DB8F /* DadJokesApp.swift in Sources */,
 				6CB9994829827D8100DD15E8 /* ContentView.swift in Sources */,
-				6CB9994629827D8100DD15E8 /* DadJokesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3488729859FEA00CE402B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3489029859FEA00CE402B /* JokeWidgetBundle.swift in Sources */,
+				6CE3489429859FEA00CE402B /* JokeWidget.swift in Sources */,
+				6CE3489229859FEA00CE402B /* JokeWidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CE3489929859FEB00CE402B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CE3488A29859FEA00CE402B /* JokeWidgetExtension */;
+			targetProxy = 6CE3489829859FEB00CE402B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6CB9994E29827D8100DD15E8 /* Debug */ = {
@@ -262,6 +383,7 @@
 		6CB9995129827D8100DD15E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +413,7 @@
 		6CB9995229827D8100DD15E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +440,60 @@
 			};
 			name = Release;
 		};
+		6CE3489B29859FEB00CE402B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY5VXPA4VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JokeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TymeDev.DadJokes.JokeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CE3489C29859FEB00CE402B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY5VXPA4VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JokeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TymeDev.DadJokes.JokeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +511,15 @@
 			buildConfigurations = (
 				6CB9995129827D8100DD15E8 /* Debug */,
 				6CB9995229827D8100DD15E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CE3489D29859FEB00CE402B /* Build configuration list for PBXNativeTarget "JokeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE3489B29859FEB00CE402B /* Debug */,
+				6CE3489C29859FEB00CE402B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
